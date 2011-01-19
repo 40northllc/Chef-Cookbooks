@@ -1,0 +1,4 @@
+grant all privileges on scalr.* to 'scalr'@'%' identified by 'scalr'; 
+use mysql; update user set password=password('scalr') where user='root'; 
+flush privileges; 
+exit

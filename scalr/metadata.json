@@ -1,0 +1,29 @@
+{
+  "attributes": {
+  },
+  "providing": {
+  },
+  "dependencies": {
+  },
+  "maintainer": "40 North LLC",
+  "replacing": {
+  },
+  "maintainer_email": "info@40northllc.com",
+  "groupings": {
+  },
+  "platforms": {
+  },
+  "license": "All rights reserved",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+  },
+  "suggestions": {
+  },
+  "name": "scalr",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "description": "Installs/Configures scalr",
+  "conflicting": {
+  }
+}

@@ -1,0 +1,4 @@
+grant all privileges on scalr.* to '<%= node[:scalrDbUser] %>'@'%' identified by '<%= node[:scalrDbUser] %>'; 
+use mysql; update user set password=password('<%= node[:scalrDbPass] %>') where user='<%= node[:scalrDbUser] %>'; 
+flush privileges; 
+exit

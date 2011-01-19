@@ -1,0 +1,7 @@
+CREATE USER '<%= node[:scalrDbUser] %>'@'%' IDENTIFIED BY '<%= node[:scalrDbPass] %>';
+CREATE USER '<%= node[:scalrDbUser] %>'@'localhost' IDENTIFIED BY '<%= node[:scalrDbPass] %>';
+grant all privileges on scalr.* to '<%= node[:scalrDbUser] %>'@'%' identified by '<%= node[:scalrDbPass] %>'; 
+grant all privileges on scalr.* to '<%= node[:scalrDbUser] %>'@'localhost' identified by '<%= node[:scalrDbPass] %>'; 
+use mysql; update user set password=password('<%= node[:scalrDbPass] %>') where user='<%= node[:scalrDbUser] %>'; 
+flush privileges; 
+exit
